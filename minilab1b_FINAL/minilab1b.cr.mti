@@ -1,0 +1,86 @@
+I:/ece554/minilab1b_FINAL/read_mem.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/read_mem.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module read_mem
+
+Top level modules:
+	read_mem
+
+} {} {}} I:/ece554/minilab1b_FINAL/minilab1b_exec.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/minilab1b_exec.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module minilab1b_exec
+
+Top level modules:
+	minilab1b_exec
+
+} {} {}} I:/ece554/minilab1b_FINAL/shiftReg.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/shiftReg.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module shiftReg
+
+Top level modules:
+	shiftReg
+
+} {} {}} I:/ece554/minilab1b_FINAL/minilab1b.v {1 {vlog -work work -vopt -stats=none I:/ece554/minilab1b_FINAL/minilab1b.v
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module minilab1b
+
+Top level modules:
+	minilab1b
+
+} {} {}} I:/ece554/minilab1b_FINAL/fifo.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/fifo.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module FIFO
+
+Top level modules:
+	FIFO
+
+} {} {}} I:/ece554/minilab1b_FINAL/matrix_vector_multiplication.sv {2 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/matrix_vector_multiplication.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module matrix_vector_multiplication
+** Warning: I:/ece554/minilab1b_FINAL/matrix_vector_multiplication.sv(5): (vlog-13314) Defaulting port 'matrix_a' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	matrix_vector_multiplication
+
+} {} {}} I:/ece554/minilab1b_FINAL/minilab1b_FINAL.v {1 {vlog -work work -vopt -stats=none I:/ece554/minilab1b_FINAL/minilab1b_FINAL.v
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module minilab1b_FINAL
+
+Top level modules:
+	minilab1b_FINAL
+
+} {} {}} I:/ece554/minilab1b_FINAL/minilab1b_toplevel_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/minilab1b_toplevel_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module minilab1b_toplevel_tb
+
+Top level modules:
+	minilab1b_toplevel_tb
+
+} {} {}} I:/ece554/minilab1b_FINAL/memory.v {1 {vlog -work work -vopt -stats=none I:/ece554/minilab1b_FINAL/memory.v
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module mem_wrapper
+
+Top level modules:
+	mem_wrapper
+
+} {} {}} I:/ece554/minilab1b_FINAL/mac.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/mac.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module MAC
+
+Top level modules:
+	MAC
+
+} {} {}} I:/ece554/minilab1b_FINAL/shiftReg_8x8.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece554/minilab1b_FINAL/shiftReg_8x8.sv
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module shiftReg_8x8
+
+Top level modules:
+	shiftReg_8x8
+
+} {} {}} I:/ece554/minilab1b_FINAL/rom.v {1 {vlog -work work -vopt -stats=none I:/ece554/minilab1b_FINAL/rom.v
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}}
