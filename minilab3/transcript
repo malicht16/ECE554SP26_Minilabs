@@ -1,0 +1,585 @@
+# Compile of baud_rate_generator.sv failed with 1 errors.
+# Compile of baud_rate_generator_tb.sv was successful.
+# Compile of driver.v failed with 1 errors.
+# Compile of minilab3_spart.v was successful.
+# Compile of spart.v was successful.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of baud_rate_generator.sv failed with 2 errors.
+# Compile of baud_rate_generator.sv was successful.
+vsim work.baud_rate_generator_tb
+# vsim work.baud_rate_generator_tb 
+# Start time: 00:37:51 on Feb 18,2026
+# Loading sv_std.std
+# Loading work.baud_rate_generator_tb
+# Loading work.baud_rate_generator
+add wave -position end  sim:/baud_rate_generator_tb/clk
+add wave -position end  sim:/baud_rate_generator_tb/rst
+add wave -position end  sim:/baud_rate_generator_tb/ioaddr
+add wave -position end  sim:/baud_rate_generator_tb/databus
+add wave -position end  sim:/baud_rate_generator_tb/br_en
+add wave -position end  sim:/baud_rate_generator_tb/divisor
+run -all
+# Compile of baud_rate_generator_tb.sv was successful.
+vsim work.baud_rate_generator_tb
+# End time: 00:38:53 on Feb 18,2026, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 8
+# vsim work.baud_rate_generator_tb 
+# Start time: 00:38:53 on Feb 18,2026
+# Loading sv_std.std
+# Loading work.baud_rate_generator_tb
+# Loading work.baud_rate_generator
+add wave -position end  sim:/baud_rate_generator_tb/clk
+add wave -position end  sim:/baud_rate_generator_tb/rst
+add wave -position end  sim:/baud_rate_generator_tb/ioaddr
+add wave -position end  sim:/baud_rate_generator_tb/databus
+add wave -position end  sim:/baud_rate_generator_tb/br_en
+add wave -position end  sim:/baud_rate_generator_tb/divisor
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv(29)
+#    Time: 1005 ps  Iteration: 1  Instance: /baud_rate_generator_tb
+# Break in Module baud_rate_generator_tb at C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv line 29
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/divisor_buffer
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv(29)
+#    Time: 1005 ps  Iteration: 1  Instance: /baud_rate_generator_tb
+# Break in Module baud_rate_generator_tb at C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv line 29
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/state
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv(29)
+#    Time: 1005 ps  Iteration: 1  Instance: /baud_rate_generator_tb
+# Break in Module baud_rate_generator_tb at C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv line 29
+# Compile of baud_rate_generator.sv was successful.
+# Compile of driver.v failed with 1 errors.
+# Compile of driver.v failed with 10 errors.
+# Compile of driver.v was successful.
+# Compile of driver_tb.sv failed with 1 errors.
+# Compile of driver_tb.sv was successful.
+vsim work.driver_tb
+# End time: 14:52:13 on Feb 19,2026, Elapsed time: 38:13:20
+# Errors: 0, Warnings: 8
+# vsim work.driver_tb 
+# Start time: 14:52:13 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_tb
+# Loading work.driver
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'databus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /driver_tb/iDUT File: C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv Line: 14
+# Error loading design
+# End time: 14:52:14 on Feb 19,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of driver.v was successful.
+vsim work.driver_tb
+# vsim work.driver_tb 
+# Start time: 14:53:09 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_tb
+# Loading work.driver
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'databus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /driver_tb/iDUT File: C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv Line: 14
+# Error loading design
+# End time: 14:53:10 on Feb 19,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of driver_tb.sv was successful.
+vsim work.driver_tb
+# vsim work.driver_tb 
+# Start time: 14:53:48 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_tb
+# Loading work.driver
+add wave -position end  sim:/driver_tb/iDUT/SEND_LB
+add wave -position end  sim:/driver_tb/iDUT/SEND_HB
+add wave -position end  sim:/driver_tb/iDUT/WAIT_FOR_SIGNAL
+add wave -position end  sim:/driver_tb/iDUT/TRANSFER
+add wave -position end  sim:/driver_tb/iDUT/RECEIVE
+add wave -position end  sim:/driver_tb/iDUT/clk
+add wave -position end  sim:/driver_tb/iDUT/rst
+add wave -position end  sim:/driver_tb/iDUT/br_cfg
+add wave -position end  sim:/driver_tb/iDUT/iocs
+add wave -position end  sim:/driver_tb/iDUT/iorw
+add wave -position end  sim:/driver_tb/iDUT/rda
+add wave -position end  sim:/driver_tb/iDUT/tbr
+add wave -position end  sim:/driver_tb/iDUT/ioaddr
+add wave -position end  sim:/driver_tb/iDUT/databus
+add wave -position end  sim:/driver_tb/iDUT/state
+add wave -position end  sim:/driver_tb/iDUT/divisor
+add wave -position end  sim:/driver_tb/iDUT/dataout
+add wave -position end  sim:/driver_tb/iDUT/stored_data
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(26)
+#    Time: 495 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 26
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(29)
+#    Time: 505 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 29
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(29)
+#    Time: 505 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 29
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect high byte tranmitted
+# incorrect address being written to
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(47)
+#    Time: 515 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 47
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(46)
+#    Time: 515 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 46
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/madis/ece554/minilab3-SPART/wave.do
+# Compile of driver_tb.sv failed with 1 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of driver_tb.sv failed with 1 errors.
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/clk'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/rst'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/iocs'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/br_cfg'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/rda'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/tbr'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/state'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/ioaddr'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/iorw'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/databus'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/divisor'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/dataout'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/iDUT/stored_data'. 
+add wave -position end  sim:/driver_tb/driver_inst/SEND_LB
+add wave -position end  sim:/driver_tb/driver_inst/SEND_HB
+add wave -position end  sim:/driver_tb/driver_inst/WAIT_FOR_SIGNAL
+add wave -position end  sim:/driver_tb/driver_inst/TRANSFER
+add wave -position end  sim:/driver_tb/driver_inst/RECEIVE
+add wave -position end  sim:/driver_tb/driver_inst/clk
+add wave -position end  sim:/driver_tb/driver_inst/rst
+add wave -position end  sim:/driver_tb/driver_inst/br_cfg
+add wave -position end  sim:/driver_tb/driver_inst/iocs
+add wave -position end  sim:/driver_tb/driver_inst/iorw
+add wave -position end  sim:/driver_tb/driver_inst/rda
+add wave -position end  sim:/driver_tb/driver_inst/tbr
+add wave -position end  sim:/driver_tb/driver_inst/ioaddr
+add wave -position end  sim:/driver_tb/driver_inst/databus
+add wave -position end  sim:/driver_tb/driver_inst/state
+add wave -position end  sim:/driver_tb/driver_inst/divisor
+add wave -position end  sim:/driver_tb/driver_inst/dataout
+add wave -position end  sim:/driver_tb/driver_inst/stored_data
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# should be in status register waiting
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(73)
+#    Time: 635 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 73
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/madis/ece554/minilab3-SPART/wave.do
+# Compile of driver.v failed with 1 errors.
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+# Warning in wave window restart: (vish-4014) No objects found matching '/driver_tb/driver_inst/dataout'. 
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect address being written to
+# should be in status register waiting
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect address being written to
+# should be in status register waiting
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect low byte tranmitted
+# incorrect address being written to
+# should be in status register waiting
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+add wave -position 10  sim:/driver_tb/driver_inst/databus
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+restart
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v failed with 1 errors.
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect address being written to
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect low byte tranmitted
+# incorrect address being written to
+# incorrect address being written to
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# incorrect ioaddr for a read
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v failed with 1 errors.
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v failed with 1 errors.
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(74)
+#    Time: 645 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 74
+# Compile of driver.v was successful.
+# Compile of driver_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+# Loading work.driver
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(89)
+#    Time: 195 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 89
+# Compile of driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(92)
+#    Time: 205 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 92
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/madis/ece554/minilab3-SPART/wave.do
+# Compile of baud_rate_generator.sv was successful.
+vsim work.baud_rate_generator_tb
+# End time: 17:39:17 on Feb 19,2026, Elapsed time: 2:45:29
+# Errors: 0, Warnings: 2
+# vsim work.baud_rate_generator_tb 
+# Start time: 17:39:17 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.baud_rate_generator_tb
+# Loading work.baud_rate_generator
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/clk
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/rst
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/ioaddr
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/databus
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/br_en
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/state
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/divisor_buffer
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/divisor_buffer_old
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/counter
+add wave -position end  sim:/baud_rate_generator_tb/iDUT/reload
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv(29)
+#    Time: 1005 ps  Iteration: 1  Instance: /baud_rate_generator_tb
+# Break in Module baud_rate_generator_tb at C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv line 29
+# Compile of driver_tb.sv failed with 5 errors.
+# Compile of driver_tb.sv was successful.
+vsim work.driver_tb
+# End time: 17:48:44 on Feb 19,2026, Elapsed time: 0:09:27
+# Errors: 0, Warnings: 3
+# vsim work.driver_tb 
+# Start time: 17:48:44 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_tb
+# Loading work.driver
+do C:/Users/madis/ece554/minilab3-SPART/wave.do
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv(119)
+#    Time: 280 ps  Iteration: 1  Instance: /driver_tb
+# Break in Module driver_tb at C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv line 119
+# Compile of bus_int.sv failed with 4 errors.
+# Compile of bus_int.sv failed with 4 errors.
+# Compile of bus_int.sv was successful.
+# Compile of driver.v was successful.
+# Compile of driver_brg_busint_tb.sv failed with 2 errors.
+# Compile of driver_brg_busint_tb.sv failed with 1 errors.
+# Compile of driver_brg_busint_tb.sv was successful.
+vsim work.driver_brg_busint_tb
+# End time: 18:28:41 on Feb 19,2026, Elapsed time: 0:39:57
+# Errors: 0, Warnings: 10
+# vsim work.driver_brg_busint_tb 
+# Start time: 18:28:41 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_brg_busint_tb
+# Loading work.driver
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+# ** Error (suppressible): (vsim-3389) Port 'rec_buffer' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /driver_brg_busint_tb/bus_inst File: C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'databus'. The port definition is at: C:/Users/madis/ece554/minilab3-SPART/bus_int.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /driver_brg_busint_tb/bus_inst File: C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv Line: 31
+# Error loading design
+# End time: 18:28:41 on Feb 19,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of driver_brg_busint_tb.sv was successful.
+vsim work.driver_brg_busint_tb
+# vsim work.driver_brg_busint_tb 
+# Start time: 18:29:19 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_brg_busint_tb
+# Loading work.driver
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+add wave -position end  sim:/driver_brg_busint_tb/clk
+add wave -position end  sim:/driver_brg_busint_tb/rst
+add wave -position end  sim:/driver_brg_busint_tb/databus
+add wave -position end  sim:/driver_brg_busint_tb/databus_driver
+add wave -position end  sim:/driver_brg_busint_tb/br_cfg
+add wave -position end  sim:/driver_brg_busint_tb/rda
+add wave -position end  sim:/driver_brg_busint_tb/tbr
+add wave -position end  sim:/driver_brg_busint_tb/iocs
+add wave -position end  sim:/driver_brg_busint_tb/iorw
+add wave -position end  sim:/driver_brg_busint_tb/ioaddr
+add wave -position end  sim:/driver_brg_busint_tb/databus_bus_int
+add wave -position end  sim:/driver_brg_busint_tb/br_en
+run -all
+restart
+# Compile of driver_brg_busint_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_brg_busint_tb
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv(49)
+#    Time: 1010 ps  Iteration: 1  Instance: /driver_brg_busint_tb
+# Break in Module driver_brg_busint_tb at C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv line 49
+# Compile of bus_int.sv was successful.
+# Compile of driver_brg_busint_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_brg_busint_tb
+# Loading work.bus_interface
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv(51)
+#    Time: 1010 ps  Iteration: 1  Instance: /driver_brg_busint_tb
+# Break in Module driver_brg_busint_tb at C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv line 51
+# Compile of bus_int.sv was successful.
+# Compile of driver_brg_busint_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_brg_busint_tb
+# Loading work.bus_interface
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv(51)
+#    Time: 1010 ps  Iteration: 1  Instance: /driver_brg_busint_tb
+# Break in Module driver_brg_busint_tb at C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv line 51
+# Compile of bus_int.sv was successful.
+# Compile of driver_brg_busint_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver_brg_busint_tb
+# Loading work.bus_interface
+# ** Error (suppressible): (vsim-3389) Port 'rec_buffer' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /driver_brg_busint_tb/bus_inst File: C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv Line: 31
+# Compile of bus_int.sv was successful.
+vsim work.driver_brg_busint_tb
+# vsim work.driver_brg_busint_tb 
+# Start time: 18:29:19 on Feb 19,2026
+# Loading sv_std.std
+# Loading work.driver_brg_busint_tb
+# Loading work.driver
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv(51)
+#    Time: 1010 ps  Iteration: 1  Instance: /driver_brg_busint_tb
+# Break in Module driver_brg_busint_tb at C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv line 51

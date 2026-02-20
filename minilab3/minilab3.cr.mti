@@ -1,0 +1,50 @@
+C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module driver_tb
+
+Top level modules:
+	driver_tb
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv {1 {vlog -work work -sv -stats=none C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module baud_rate_generator
+
+Top level modules:
+	baud_rate_generator
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/driver.v {1 {vlog -work work -stats=none C:/Users/madis/ece554/minilab3-SPART/driver.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module driver
+
+Top level modules:
+	driver
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v {1 {vlog -work work -stats=none C:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module minilab3_spart
+
+Top level modules:
+	minilab3_spart
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module baud_rate_generator_tb
+
+Top level modules:
+	baud_rate_generator_tb
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module driver_brg_busint_tb
+
+Top level modules:
+	driver_brg_busint_tb
+
+} {} {}} C:/Users/madis/ece554/minilab3-SPART/spart.v {1 {vlog -work work -stats=none C:/Users/madis/ece554/minilab3-SPART/spart.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module spart
+
+Top level modules:
+	spart
+
+} {} {}}

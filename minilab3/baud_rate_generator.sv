@@ -1,6 +1,6 @@
 module baud_rate_generator(
     input  logic       clk,
-    input  logic       rst,
+    input  logic       rst,         //active low
     input  logic [1:0] ioaddr,
     input  logic [7:0] databus,
     output logic       br_en
@@ -16,8 +16,8 @@ module baud_rate_generator(
     logic        reload;
 
     
-    assign divisor_buffer = (ioaddr == 2'b10) ? {divisor_buffer[15:8], databus}
-                                              : (ioaddr == 2'b11) ? {databus, divisor_buffer[7:0]}
+    assign divisor_buffer = (ioaddr == 2'b10) ? {divisor_buffer_old[15:8], databus}
+                                              : (ioaddr == 2'b11) ? {databus, divisor_buffer_old[7:0]}
                                                                   : divisor_buffer_old;
 
     always @(posedge clk) begin
