@@ -583,3 +583,11 @@ run -all
 # ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv(51)
 #    Time: 1010 ps  Iteration: 1  Instance: /driver_brg_busint_tb
 # Break in Module driver_brg_busint_tb at C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv line 51
+# Compile of bus_int.sv was successful.
+# Compile of transmitter.sv was successful.
+# Compile of transmitter_tb.sv was successful.
+# Compile of transmitter.sv failed with 1 errors.
+# Compile of transmitter.sv was successful.
+# Compile of spart.v was successful.
+# Compile of receiver.sv was successful.
+# Compile of simulation_tb.sv was successful.

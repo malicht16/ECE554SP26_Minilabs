@@ -30,5 +30,17 @@ module spart(
     input rxd
     );
 
+    wire [7:0] databus_bus_int;
+    wire       br_en;
+    wire [7:0] receiver_databus;
+    wire [7:0] bus_int_input_data;
+
+    assign bus_int_input_data = rda ? receiver_databus : databus;
+
+    bus_interface bus_inst(.databus(databus_bus_int), .rec_buffer(bus_int_input_data), .ioaddr(ioaddr), .rda(rda), .tbr(tbr), .iocs(iocs), .iorw(iorw));
+    baud_rate_generator brg_inst(.clk(clk), .rst(rst), .ioaddr(ioaddr), .databus(databus_bus_int), .br_en(br_en));
+    transmitter transmitter_inst(.clk(clk), .reset(rst), .baud_rate_generator(br_en), 
+                                 .transmit_enable(~iorw), .ioaddr(ioaddr), .transmit_buffer(databus_bus_int), .TBR(tbr), .TxD(txd));
+    receiver receiver_inst(.clk(clk), .reset(rst), .RxD(rxd), .baud_rate_generator(br_en), .receiver_buffer(receiver_databus), .RDA(rda));
 
 endmodule
