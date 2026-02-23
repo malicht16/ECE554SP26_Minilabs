@@ -110,7 +110,8 @@ module transmitter(
             default: begin 
                 // Wait for transmit_enable and baud_rate_generator to BOTH go high
                 next_state = ((transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator) ? START : WAIT;
-                TBR = ~(baud_rate_generator & (transmit_enable & (ioaddr == 2'b00)));
+                //TBR = ~(baud_rate_generator & transmit_enable);
+                TBR = 1'b1;
                 set = (transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator;
                 baud_reset = (transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator;
             end

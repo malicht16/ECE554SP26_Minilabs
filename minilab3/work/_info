@@ -11,295 +11,295 @@ cModel Technology
 dC:/intelFPGA/20.1
 vbaud_rate_generator
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1771544347
+Z1 !s110 1771823354
 !i10b 1
 !s100 >3VN1a0VNzdiF<P_bnc[20
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IMRIX?SLIS13FJ@gjPdlbY3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z3 dC:/Users/madis/ece554/minilab3-SPART
+Z4 dC:/Users/madis/ece554/minilab3-SPART
 w1771544174
 8C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv
 FC:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv
-!i122 33
+!i122 58
 L0 1 47
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1771544347.000000
+!s108 1771823353.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator.sv|
 !i113 1
-Z5 o-work work -sv
-Z6 tCvgOpt 0
+Z6 o-work work -sv
+Z7 tCvgOpt 0
 vbaud_rate_generator_tb
 R0
-!s110 1771396720
+R1
 !i10b 1
 !s100 cod]^C<z25_<0Mk8n3KTh3
-R1
-I9DTUNFEag?GafiX2MR[an3
 R2
-S1
+I9DTUNFEag?GafiX2MR[an3
 R3
+S1
+R4
 w1771396712
 8C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv
 FC:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv
-!i122 4
+!i122 59
 L0 1 35
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771396720.000000
+Z8 !s108 1771823354.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/baud_rate_generator_tb.sv|
 !i113 1
-R5
 R6
+R7
 vbus_interface
 R0
-!s110 1771623936
+!s110 1771824255
 !i10b 1
-!s100 j5T]Gm9gINhU>W>fKn7<R3
-R1
-I9n9k5Y_8m?R8OEK6VJmmn3
+!s100 J^4mO2EX6a=^bCQ;]2@B70
 R2
-S1
+ILn93_lEK3COA:>3M]9fZG3
 R3
-w1771614937
+S1
+R4
+w1771824249
 8C:/Users/madis/ece554/minilab3-SPART/bus_int.sv
 FC:/Users/madis/ece554/minilab3-SPART/bus_int.sv
-!i122 47
-L0 1 30
-R4
+!i122 69
+L0 1 32
+R5
 r1
 !s85 0
 31
-!s108 1771623935.000000
+!s108 1771824255.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/bus_int.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/bus_int.sv|
 !i113 1
-R5
 R6
+R7
 vdriver
-!s110 1771547236
+!s110 1771881388
 !i10b 1
-!s100 i4hblT`DhakO7FWfb098R3
-R1
-Ie5]4fId0P77NG?OhG;[TH0
+!s100 F^Ic^Z7CPRS;fEXK1OTn^1
 R2
+ITmBF>9^G64gl<>z6O39TL3
 R3
-w1771543746
+R4
+w1771881384
 8C:/Users/madis/ece554/minilab3-SPART/driver.v
 FC:/Users/madis/ece554/minilab3-SPART/driver.v
-!i122 36
-L0 20 98
-R4
+!i122 85
+L0 20 102
+R5
 r1
 !s85 0
 31
-!s108 1771547236.000000
+!s108 1771881388.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/driver.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/madis/ece554/minilab3-SPART/driver.v|
 !i113 1
-Z7 o-work work
-R6
+Z9 o-work work
+R7
 vdriver_brg_busint_tb
 R0
-!s110 1771547677
+R1
 !i10b 1
 !s100 <mYXDk[QGlXjhC1=<`4k:0
-R1
-IWCJeS`;L4a<2YKHK<8A`:1
 R2
-S1
+IWCJeS`;L4a<2YKHK<8A`:1
 R3
+S1
+R4
 w1771547673
 8C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv
 FC:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv
-!i122 45
+!i122 64
 L0 1 57
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771547677.000000
+R8
 !s107 C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/driver_brg_busint_tb.sv|
 !i113 1
-R5
 R6
+R7
 vdriver_tb
 R0
-!s110 1771544914
+R1
 !i10b 1
 !s100 ZhUl<z[MH`[i=UMznAcbg1
-R1
-Ia:?=ScSCT;1jekgT^TBQz2
 R2
-S1
+Ia:?=ScSCT;1jekgT^TBQz2
 R3
+S1
+R4
 w1771544907
 8C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv
 FC:/Users/madis/ece554/minilab3-SPART/driver_tb.sv
-!i122 34
+!i122 63
 L0 1 125
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771544914.000000
+R8
 !s107 C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/driver_tb.sv|
 !i113 1
-R5
 R6
+R7
 vminilab3_spart
-!s110 1771396549
+R1
 !i10b 1
 !s100 ]]m@nA^kfaTcJ;WL5b]eQ0
-R1
-I@2UFZgabZRE^oQITN3Z]21
 R2
+I@2UFZgabZRE^oQITN3Z]21
 R3
+R4
 w1771360121
 8C:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v
 FC:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v
-!i122 1
+!i122 61
 L0 6 133
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771396549.000000
+R8
 !s107 C:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/madis/ece554/minilab3-SPART/minilab3_spart.v|
 !i113 1
+R9
 R7
-R6
 vreceiver
 R0
-!s110 1771792417
+Z10 !s110 1771823355
 !i10b 1
 !s100 zQ@KzWNOWWzO^4JO?9eh:0
-R1
-IJbnWkM2166@TfGeL2i?eX3
 R2
-S1
+IJbnWkM2166@TfGeL2i?eX3
 R3
+S1
+R4
 w1771781310
 8C:/Users/madis/ece554/minilab3-SPART/receiver.sv
 FC:/Users/madis/ece554/minilab3-SPART/receiver.sv
-!i122 52
+!i122 67
 L0 1 81
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771792417.000000
+Z11 !s108 1771823355.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/receiver.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/receiver.sv|
 !i113 1
-R5
 R6
+R7
 vsimulation_tb
 R0
-!s110 1771793781
+!s110 1771878267
 !i10b 1
-!s100 YAFQz[HLCFAk1Q8>L8oh11
-R1
-If1SSHf9DLS9WJjDW_9AQ`1
+!s100 ^IUghWjR8VTn@fV0jU2130
 R2
-S1
+IWDYmS29oQJU>T0UhOC93M1
 R3
-w1771793745
+S1
+R4
+w1771878263
 8C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv
 FC:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv
-!i122 53
-L0 1 21
-R4
+!i122 81
+L0 1 89
+R5
 r1
 !s85 0
 31
-!s108 1771793780.000000
+!s108 1771878267.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv|
 !i113 1
-R5
 R6
+R7
 vspart
-!s110 1771792394
+!s110 1771824512
 !i10b 1
-!s100 nWC<H7UMDZ_j4Mm839?[R2
-R1
-I_2BS?oIVVC<N45QFTKeg>2
+!s100 [dK7A5B6<5QLainIblOa80
 R2
+IZad3j^40[9hZLLAfUW4360
 R3
-w1771790032
+R4
+w1771824490
 8C:/Users/madis/ece554/minilab3-SPART/spart.v
 FC:/Users/madis/ece554/minilab3-SPART/spart.v
-!i122 51
+!i122 70
 L0 20 27
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771792394.000000
+!s108 1771824512.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/spart.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/madis/ece554/minilab3-SPART/spart.v|
 !i113 1
+R9
 R7
-R6
 vtransmitter
 R0
-!s110 1771792390
+!s110 1771880544
 !i10b 1
-!s100 5SGUQXGE0WS5^M6:1i>Uj3
-R1
-IidHzgOK4US<<153X2F2n03
+!s100 ?CF=PSBN21j5UOcYa8EL91
 R2
-S1
+I<@Ob<V5lhORmTmdZ8AN^Z2
 R3
-w1771792384
+S1
+R4
+w1771880531
 8C:/Users/madis/ece554/minilab3-SPART/transmitter.sv
 FC:/Users/madis/ece554/minilab3-SPART/transmitter.sv
-!i122 50
-L0 1 121
-R4
+!i122 84
+L0 1 122
+R5
 r1
 !s85 0
 31
-!s108 1771792390.000000
+!s108 1771880544.000000
 !s107 C:/Users/madis/ece554/minilab3-SPART/transmitter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/transmitter.sv|
 !i113 1
-R5
 R6
+R7
 vtransmitter_tb
 R0
-!s110 1771623985
+R10
 !i10b 1
 !s100 `G[jP[ZDQ4eQk`;Z^o44B2
-R1
-IV7?^egbz4e[c6<m;OSkC90
 R2
-S1
+IV7?^egbz4e[c6<m;OSkC90
 R3
+S1
+R4
 w1771548665
 8C:/Users/madis/ece554/minilab3-SPART/transmitter_tb.sv
 FC:/Users/madis/ece554/minilab3-SPART/transmitter_tb.sv
-!i122 49
+!i122 66
 L0 1 93
-R4
+R5
 r1
 !s85 0
 31
-!s108 1771623985.000000
+R11
 !s107 C:/Users/madis/ece554/minilab3-SPART/transmitter_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/madis/ece554/minilab3-SPART/transmitter_tb.sv|
 !i113 1
-R5
 R6
+R7

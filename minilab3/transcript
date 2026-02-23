@@ -591,3 +591,246 @@ run -all
 # Compile of spart.v was successful.
 # Compile of receiver.sv was successful.
 # Compile of simulation_tb.sv was successful.
+# Compile of simulation_tb.sv was successful.
+# Compile of simulation_tb.sv was successful.
+vsim work.simulation_tb
+# End time: 22:14:11 on Feb 22,2026, Elapsed time: 75:44:52
+# Errors: 1, Warnings: 15
+# vsim work.simulation_tb 
+# Start time: 22:14:11 on Feb 22,2026
+# Loading sv_std.std
+# Loading work.simulation_tb
+# Loading work.spart
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+# Loading work.transmitter
+# Loading work.receiver
+# Loading work.driver
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'databus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /simulation_tb/spart0 File: C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv Line: 36
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'databus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /simulation_tb/driver1 File: C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv Line: 39
+# ** Error (suppressible): (vsim-8885) Illegal inout port connection for port 'databus' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /simulation_tb/spart1 File: C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv Line: 42
+# Error loading design
+# End time: 22:14:12 on Feb 22,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 1
+# Compile of simulation_tb.sv failed with 1 errors.
+# Compile of simulation_tb.sv was successful.
+vsim work.simulation_tb
+# vsim work.simulation_tb 
+# Start time: 22:16:06 on Feb 22,2026
+# Loading sv_std.std
+# Loading work.simulation_tb
+# Loading work.spart
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+# Loading work.transmitter
+# Loading work.receiver
+# Loading work.driver
+add wave -position end  sim:/simulation_tb/clk
+add wave -position end  sim:/simulation_tb/rst
+add wave -position end  sim:/simulation_tb/br_cfg
+add wave -position end  sim:/simulation_tb/iocs0
+add wave -position end  sim:/simulation_tb/iorw0
+add wave -position end  sim:/simulation_tb/ioaddr0
+add wave -position end  sim:/simulation_tb/rda0
+add wave -position end  sim:/simulation_tb/tbr0
+add wave -position 7  sim:/simulation_tb/databus0
+add wave -position 8  sim:/simulation_tb/databus0_driver
+add wave -position end  sim:/simulation_tb/iocs1
+add wave -position end  sim:/simulation_tb/iorw1
+add wave -position end  sim:/simulation_tb/ioaddr1
+add wave -position end  sim:/simulation_tb/databus1
+add wave -position end  sim:/simulation_tb/rda1
+add wave -position end  sim:/simulation_tb/tbr1
+add wave -position 4  sim:/simulation_tb/txd0_rxd1
+add wave -position 5  sim:/simulation_tb/txd1_rxd0
+add wave -position 4  sim:/simulation_tb/spart0/brg_inst/clk
+add wave -position 5  sim:/simulation_tb/spart0/brg_inst/rst
+add wave -position 6  sim:/simulation_tb/spart0/brg_inst/ioaddr
+add wave -position 7  sim:/simulation_tb/spart0/brg_inst/databus
+add wave -position 8  sim:/simulation_tb/spart0/brg_inst/br_en
+add wave -position 9  sim:/simulation_tb/spart0/brg_inst/state
+add wave -position 10  sim:/simulation_tb/spart0/brg_inst/divisor_buffer
+add wave -position 11  sim:/simulation_tb/spart0/brg_inst/divisor_buffer_old
+add wave -position 12  sim:/simulation_tb/spart0/brg_inst/counter
+add wave -position 13  sim:/simulation_tb/spart0/brg_inst/reload
+add wave -position 15  sim:/simulation_tb/spart1/brg_inst/clk
+add wave -position 16  sim:/simulation_tb/spart1/brg_inst/rst
+add wave -position 17  sim:/simulation_tb/spart1/brg_inst/ioaddr
+add wave -position 18  sim:/simulation_tb/spart1/brg_inst/databus
+add wave -position 19  sim:/simulation_tb/spart1/brg_inst/br_en
+add wave -position 20  sim:/simulation_tb/spart1/brg_inst/state
+add wave -position 21  sim:/simulation_tb/spart1/brg_inst/divisor_buffer
+add wave -position 22  sim:/simulation_tb/spart1/brg_inst/divisor_buffer_old
+add wave -position 23  sim:/simulation_tb/spart1/brg_inst/counter
+add wave -position 24  sim:/simulation_tb/spart1/brg_inst/reload
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/madis/ece554/minilab3-SPART/simulation_tb_wave.do
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(73)
+#    Time: 120 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 73
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(73)
+#    Time: 120 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 73
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/databus
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/rec_buffer
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/ioaddr
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/rda
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/tbr
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/iocs
+add wave -position end  sim:/simulation_tb/spart1/bus_inst/iorw
+restart
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(73)
+#    Time: 120 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 73
+# Compile of bus_int.sv failed with 4 errors.
+# Compile of baud_rate_generator.sv was successful.
+# Compile of baud_rate_generator_tb.sv was successful.
+# Compile of driver.v was successful.
+# Compile of minilab3_spart.v was successful.
+# Compile of spart.v was successful.
+# Compile of driver_tb.sv was successful.
+# Compile of bus_int.sv failed with 4 errors.
+# Compile of driver_brg_busint_tb.sv was successful.
+# Compile of transmitter.sv was successful.
+# Compile of transmitter_tb.sv was successful.
+# Compile of receiver.sv was successful.
+# Compile of simulation_tb.sv was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of bus_int.sv failed with 1 errors.
+# Compile of bus_int.sv failed with 4 errors.
+# Compile of bus_int.sv failed with 1 errors.
+# Compile of bus_int.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+# Loading work.spart
+# Loading work.bus_interface
+# Loading work.baud_rate_generator
+# Loading work.transmitter
+# Loading work.receiver
+# Loading work.driver
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(73)
+#    Time: 120 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 73
+# Compile of spart.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spart
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(73)
+#    Time: 120 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 73
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(79)
+#    Time: 250 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 79
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(83)
+#    Time: 260 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 83
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(85)
+#    Time: 260 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 85
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(87)
+#    Time: 260 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 87
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(87)
+#    Time: 265 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 87
+# Compile of transmitter.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.transmitter
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(87)
+#    Time: 265 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 87
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(78)
+#    Time: 825 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 78
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(78)
+#    Time: 845 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 78
+# Compile of simulation_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(78)
+#    Time: 865 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 78
+# Compile of simulation_tb.sv was successful.
+# Compile of transmitter.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simulation_tb
+# Loading work.transmitter
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(83)
+#    Time: 1045 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 83
+# Compile of driver.v was successful.
+# Compile of transmitter.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.transmitter
+# Loading work.driver
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(83)
+#    Time: 1045 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 83
+# Compile of driver.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.driver
+run -all
+# ** Note: $stop    : C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv(83)
+#    Time: 1045 ps  Iteration: 1  Instance: /simulation_tb
+# Break in Module simulation_tb at C:/Users/madis/ece554/minilab3-SPART/simulation_tb.sv line 83
