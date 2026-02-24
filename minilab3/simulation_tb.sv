@@ -73,12 +73,20 @@ module simulation_tb();
         ioaddr0 = 2'b01;
         databus0_driver = 8'bz;
 
+        //check to make sure baud rate generator shows up
         repeat(82) @(posedge clk);
-        iorw0 = 1'b0;
-        ioaddr0 = 2'b00;
-        databus0_driver = 8'b10101000;
 
-        repeat(20) @(posedge clk);
+        @(posedge clk);
+        ioaddr0  <= 2'b00;
+        iorw0    <= 1'b0;
+        databus0_driver <= "A";
+
+        @(posedge clk);
+        ioaddr0  <= 2'b01;
+        iorw0    <= 1'b1;
+        databus0_driver <= 8'bz;
+
+        repeat(1600) @(posedge clk);
 
         $stop();
     end

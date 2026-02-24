@@ -18,7 +18,7 @@ module bus_interface(
     assign databus = databus_driver;
     always_comb begin
         case (ioaddr)
-            2'b00: databus_driver = (~iorw | rda) ? rec_buffer : 8'bz; //either writing data or reading data
+            2'b00: databus_driver = (~iorw | (ioaddr == 2'b00)) ? rec_buffer : 8'bz; //either writing data or reading data
             2'b10: databus_driver = rec_buffer;    //sending low byte
             2'b11: databus_driver = rec_buffer;    //sending high byte
             default: databus_driver = 8'bz; 

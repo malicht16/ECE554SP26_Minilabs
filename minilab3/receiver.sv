@@ -36,6 +36,7 @@ module receiver(
     // RECEIVE is when the state machine is reading and shifting data
     typedef enum reg [1:0] {
         WAIT,
+        START_BIT,
         RECEIVE
     } state_t;
 
@@ -51,6 +52,8 @@ module receiver(
     always_ff @(posedge clk)
         if (reset | counter_reset) RDA <= 1'b0;
         else if (set_RDA) RDA <= 1'b1; 
+        else RDA <= 1'b0;
+
 
 
     // State machine
@@ -61,6 +64,10 @@ module receiver(
         set_RDA = 1'b0;
 
         case (state)
+            START_BIT : begin
+                next_state <= baud_rate_generator ? RECEIVE : START_BIT;
+            end
+
             RECEIVE: begin 
                 // Once counter hits 8, wait until baud_rate_generator and then we are done!
                 // Otherwise, we need to increment the counter and wait for the next bit
@@ -72,7 +79,7 @@ module receiver(
             // Same as WAIT
             default: begin 
                 // Wait for RxD to go low, indicating start of transmission
-                next_state = (~RxD) ? RECEIVE : WAIT;
+                next_state = (~RxD) ? START_BIT : WAIT;
                 counter_reset = ~RxD;
             end
         endcase

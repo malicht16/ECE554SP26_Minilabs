@@ -58,14 +58,18 @@ module driver(
     assign databus = iorw ? 8'bz
                           : (ioaddr == 2'b10) ? divisor[7:0]                            //sending lowbyte
                                               : (ioaddr == 2'b11) ? divisor[15:8]       //sending highbyte
-                                                                  : (state == TRANSMIT) ? stored_data   //transmit data previously received
+                                                                  : (state == 3'b011) ? stored_data   //transmit data previously received
                                                                                         : 8'd0;
 
     //if we are receiving data store the eight bits
-    assign stored_data = (state == RECEIVE) ? databus : stored_data_old;
-    always @(posedge clk) begin
-        stored_data_old <= stored_data;
-    end
+    //assign stored_data = (state == 3'b100) ? databus : stored_data_old;
+    //always @(posedge clk) begin
+    //    if(~rst) begin
+    //        stored_data_old <= 8'd0;
+    //    end else begin
+    //        stored_data_old <= stored_data;
+    //    end
+    //end
 
     //needed an immediate pulse whenever seeing the tbr and rda signals
     //assign iorw   = tbr ? 1'b0 : iorw_flop;
@@ -79,7 +83,7 @@ module driver(
             //dataout <= divisor[7:0];
             state <= SEND_LB;
             iorw <= 1'b0;
-            stored_data_old = 8'd0;
+            stored_data = 8'd0;
             have_data_to_transmit = 1'b0;
         end else begin
             case(state)
@@ -108,6 +112,7 @@ module driver(
                     iorw <= 1'b1;
                 end
                 RECEIVE : begin
+                    stored_data <= databus;
                     ioaddr <= 2'b01;
                     state <= WAIT_FOR_SIGNAL;
                     have_data_to_transmit <= 1'b1;

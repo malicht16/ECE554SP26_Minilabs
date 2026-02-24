@@ -35,7 +35,8 @@ module spart(
     wire [7:0] receiver_databus;
     wire [7:0] bus_int_input_data;
 
-    assign bus_int_input_data = rda ? receiver_databus : databus;
+    assign bus_int_input_data = ((ioaddr == 2'b00) & iorw) ? receiver_databus : databus;
+    assign databus = ((ioaddr == 2'b00) & iorw) ? databus_bus_int : 8'bz;
 
     bus_interface bus_inst(.databus(databus_bus_int), .rec_buffer(bus_int_input_data), .ioaddr(ioaddr), .rda(rda), .tbr(tbr), .iocs(iocs), .iorw(iorw));
     baud_rate_generator brg_inst(.clk(clk), .rst(rst), .ioaddr(ioaddr), .databus(databus_bus_int), .br_en(br_en));

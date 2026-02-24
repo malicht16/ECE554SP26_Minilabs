@@ -55,6 +55,8 @@ module transmitter(
             // Shift: move to the next bit
             toTransmit <= {1'b0, toTransmit[7:1]};
             TxD <= toTransmit[0];
+        end else if (baud_rate_generator) begin
+            TxD <= 1'b1;
         end
 
     // Buffer logic (works on CLK)
@@ -74,7 +76,8 @@ module transmitter(
     typedef enum reg [1:0] {
         WAIT,
         START,
-        TRANSMIT
+        TRANSMIT,
+        WAIT_FOR_LAST_BIT
     } state_t;
 
     state_t state, next_state;
@@ -96,24 +99,28 @@ module transmitter(
             START: begin
                 // Wait for next baud_rate_generator before transmitting
                 next_state = (baud_rate_generator) ? TRANSMIT : START;
-                shift = baud_rate_generator;
+                set = baud_rate_generator;
             end
 
             TRANSMIT: begin
                 // Transmit after every baud_rate
                 // Move back to WAIT after counter = 8
                 shift = ~(counter == 4'h8) & baud_rate_generator;
-                next_state = (counter == 4'h8) ? WAIT : TRANSMIT;
+                next_state = (counter == 4'h8) ? WAIT_FOR_LAST_BIT : TRANSMIT;
+            end
+
+            WAIT_FOR_LAST_BIT : begin
+                next_state = baud_rate_generator ? WAIT : WAIT_FOR_LAST_BIT;
             end
 
             // Same as WAIT
             default: begin 
                 // Wait for transmit_enable and baud_rate_generator to BOTH go high
-                next_state = ((transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator) ? START : WAIT;
+                //FIXME should the spart wait for the baudrate to even capture data or just transmit data??? Currently I think dont wait for br_en
+                next_state = ((transmit_enable & (ioaddr == 2'b00))) ? START : WAIT;
                 //TBR = ~(baud_rate_generator & transmit_enable);
                 TBR = 1'b1;
-                set = (transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator;
-                baud_reset = (transmit_enable & (ioaddr == 2'b00)) & baud_rate_generator;
+                baud_reset = (transmit_enable & (ioaddr == 2'b00));
             end
         endcase
     end
