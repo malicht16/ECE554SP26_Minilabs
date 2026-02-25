@@ -73,8 +73,9 @@ module transmitter(
     // WAIT is where we wait for transmit_enable to go high (indicating start transmitting)
     // START is when we temporarily delay for the next baud_rate since we have to have 0 transmitted for 1 baud rate
     // TRANSMIT is when we actually transmit data
-    typedef enum reg [1:0] {
+    typedef enum reg [2:0] {
         WAIT,
+        GET_DATA,
         START,
         TRANSMIT,
         WAIT_FOR_LAST_BIT
@@ -96,10 +97,15 @@ module transmitter(
         baud_reset = 1'b0;
 
         case (state)
+            GET_DATA : begin
+                set = 1'b1;
+                next_state = START;
+            end
+
             START: begin
                 // Wait for next baud_rate_generator before transmitting
                 next_state = (baud_rate_generator) ? TRANSMIT : START;
-                set = baud_rate_generator;
+                shift = baud_rate_generator;
             end
 
             TRANSMIT: begin
@@ -117,7 +123,7 @@ module transmitter(
             default: begin 
                 // Wait for transmit_enable and baud_rate_generator to BOTH go high
                 //FIXME should the spart wait for the baudrate to even capture data or just transmit data??? Currently I think dont wait for br_en
-                next_state = ((transmit_enable & (ioaddr == 2'b00))) ? START : WAIT;
+                next_state = ((transmit_enable & (ioaddr == 2'b00))) ? GET_DATA : WAIT;
                 //TBR = ~(baud_rate_generator & transmit_enable);
                 TBR = 1'b1;
                 baud_reset = (transmit_enable & (ioaddr == 2'b00));

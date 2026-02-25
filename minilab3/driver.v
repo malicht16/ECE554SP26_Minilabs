@@ -110,6 +110,7 @@ module driver(
                     ioaddr <= 2'b01;
                     state <= WAIT_FOR_SIGNAL;
                     iorw <= 1'b1;
+                    have_data_to_transmit <= 1'b0;
                 end
                 RECEIVE : begin
                     stored_data <= databus;
